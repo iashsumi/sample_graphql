@@ -4,7 +4,7 @@ ENV LANG C.UTF-8
 ENV APP_ROOT /app
 WORKDIR $APP_ROOT
  
-RUN apt-get update -qq && apt-get install -y nodejs mysql-client sqlite3
+RUN apt-get update -qq && apt-get install -y nodejs mysql-client
  
 COPY Gemfile $APP_ROOT
 COPY Gemfile.lock $APP_ROOT
