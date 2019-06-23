@@ -3,11 +3,15 @@
 # }
 module Mutations
   module UserMutations
-    class CreateUser < BaseMutation
+    class CreateUserMutation < BaseMutation
+      # define return fields
       type String
+
+      # define arguments
       argument :name, String, required: true
       argument :emails, [String], required: false
 
+      # define resolve method
       def resolve(name: nil, emails: nil)
         user = User.create!(name: name)
         return 'OK' if emails.blank?
@@ -15,8 +19,6 @@ module Mutations
           user.emails << Email.new(email: email)
         end
         return 'OK'
-      rescue ActiveRecord::RecordInvalid => e
-        #GraphQL::ExecutionError.new("Invalid input: #{e.record.errors.full_messages.join(', ')}")
       end
     end
   end
