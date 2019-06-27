@@ -15,7 +15,7 @@ module Mutations
       # define resolve method
       def resolve(id:)
         User.find(id).destroy
-        return 'delete ok'
+        'delete ok'
       end
     end
   end

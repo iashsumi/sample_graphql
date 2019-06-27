@@ -1,5 +1,5 @@
 # mutation {
-#   createUser(name: "", emails: ["vdtfsatudtsa@dsdas.dsadsa", "dsadsads@dsadsa.dsa"]) 
+#   createUser(name: "", emails: ["vdtfsatudtsa@dsdas.dsadsa", "dsadsads@dsadsa.dsa"])
 #   {
 #     message,
 #     errors
