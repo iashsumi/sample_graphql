@@ -13,6 +13,8 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require 'simplecov'
+SimpleCov.start 'rails'
 RSpec.configure do |config|
   # database_cleanerの設定
   config.before(:suite) do
