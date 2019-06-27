@@ -44,3 +44,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "graphql"
 gem 'mysql2'
+gem 'rubocop', '~> 0.72.0', require: false
