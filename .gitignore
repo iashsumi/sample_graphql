@@ -28,3 +28,9 @@
 
 # Ignore coverage
 /coverage/*
+
+# Ignore output
+/output/
+
+# Ignore .sass-cache
+/.sass-cache/
