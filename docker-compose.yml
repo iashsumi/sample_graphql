@@ -21,6 +21,12 @@ services:
       - db
     ports:
       - "3000:3000"
+  doc:
+    image: nginx:alpine
+    ports:
+      - 8080:80
+    volumes:
+      - "./output/:/usr/share/nginx/html"
 volumes:
   mysql-data:
     driver: local
